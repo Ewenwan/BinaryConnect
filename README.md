@@ -31,12 +31,18 @@ You may want to checkout our subsequent work:
 
 * Python, Numpy, Scipy
 * [Theano](http://deeplearning.net/software/theano/install.html) (Bleeding edge version)
+
+  [我的Theano](https://github.com/Ewenwan/Theano)
+  
 * [Pylearn2](http://deeplearning.net/software/pylearn2/)
+
+  [Pylearn2 是建立在Theano之上的一个机器学习库](https://github.com/Ewenwan/pylearn2)
+    
 * [Lasagne](http://lasagne.readthedocs.org/en/latest/user/installation.html)
 * [PyTables](http://www.pytables.org/usersguide/installation.html) (only for the SVHN dataset)
 * a fast Nvidia GPU or a large amount of patience
 
-## MNIST
+## 手写字体数据集测试  MNIST
 
     python mnist.py
     
@@ -45,7 +51,7 @@ It should run for about 30 minutes on a GTX 680 GPU.
 The final test error should be around **1.15%**.
 Please note that this is NOT the experiment reported in the article (which is in the "master" branch of the repository).
 
-## CIFAR-10
+## 10类别图像分类数据集 CIFAR-10
 
     python cifar10.py
     
@@ -53,7 +59,7 @@ This python script trains a CNN on CIFAR-10 with the stochastic version of Binar
 It should run for about 20 hours on a Titan Black GPU.
 The final test error should be around **8.27%**.
 
-## SVHN
+## 街拍门牌号码数据集(SVHN)  SVHN
 
     export SVHN_LOCAL_PATH=/Tmp/SVHN/
     python svhn_preprocessing.py
